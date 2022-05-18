@@ -1,0 +1,8 @@
+{
+    "port": 8080,
+    "host": "localhost",
+    "baseUrl": "/api",
+    "dbUri": "cluster0.quwot.mongodb.net/?retryWrites=true&w=majority",
+    "dbUser": "nvm",
+    "dbPassword": "jzVESirKnjLv8sKn"
+}
