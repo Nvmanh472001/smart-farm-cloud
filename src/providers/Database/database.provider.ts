@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
 import { log } from "utils";
+import { config } from "node-config-ts"
 
 class Database {
 
     private static _instance: Database;
-    private _Uri: string = "";
+    private _Uri: string = `mongodb+srv://${config.dbUser}:${config.dbPassword}@${config.dbUri}`;
 
     constructor() 
     {
@@ -32,7 +33,7 @@ class Database {
             log.info("Database Connected")
         })
         .catch((error) => {
-            log.error("Database Error", error)
+            log.error(`Database Error ${error}`)
         })
     }
 
