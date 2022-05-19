@@ -8,6 +8,17 @@ declare module "node-config-ts" {
     dbUri: string
     dbUser: string
     dbPassword: string
+    mqqt: Mqqt
+  }
+  interface Mqqt {
+    port: number
+    protocolVersion: number
+    keepalive: number
+    properties: Properties
+  }
+  interface Properties {
+    requestResponseInformation: boolean
+    requestProblemInformation: boolean
   }
   export const config: Config
   export type Config = IConfig

@@ -4,5 +4,14 @@
     "baseUrl": "/api",
     "dbUri": "smart-farm.lpeml.mongodb.net/?retryWrites=true&w=majority",
     "dbUser": "nvm",
-    "dbPassword": "CJZMFB84sSlo5EKz"
+    "dbPassword": "CJZMFB84sSlo5EKz",
+    "mqqt": {
+        "port": 1883,
+        "protocolVersion": 5,
+        "keepalive": 60,
+        "properties": {
+            "requestResponseInformation": true,
+            "requestProblemInformation": true
+        }
+    }
 }
