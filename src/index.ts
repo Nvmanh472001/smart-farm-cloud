@@ -1,8 +1,5 @@
-import { App, Database } from "./providers/index"
-
-
-const app = App.getInstance()
-const db = Database.getInstance()
+import App from "app";
+const app = App.getInstance();
 
 app.initializeConnection()
-db.initialize()
+
